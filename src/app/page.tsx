@@ -1,5 +1,5 @@
 
-import MainHome from "@/components/MainHome/MainHome";
+import MainHome from "@/components/Mainhome/MainHome";
 import Feature from "@/components/Feature/Feature";
 import SigninForm from "@/components/SigninForm/SigninForm";
 import Contact from "@/components/Contact/Contact";
