@@ -9,15 +9,13 @@ import Partners from '@/components/Partners/Partners';
 
 export default function Home() {
   return (
-    <main data-scroll-container>
-    {/* // <main> */}
-
+    <div data-scroll-container>
       <MainHome />
       <Feature />
       <Partners />
       <SigninForm />
       <Contact />
 
-    </main>
+    </div>
   );
 }
