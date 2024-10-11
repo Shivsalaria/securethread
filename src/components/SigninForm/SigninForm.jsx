@@ -3,49 +3,49 @@ import React, { useEffect } from 'react';
 import Image from "next/image";
 import homeBanner from "@/../public/signin.png";
 import logo from "@/../public/logo.png";
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 function SigninForm() {
 
-    useEffect(() => {
-        gsap.fromTo(
-            ".form-section",
-            { opacity: 0, y: 50 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: ".form-section",
-                    start: "top 80%",
-                    end: "bottom 20%",
-                    scrub: true,
-                    markers: false, 
-                }
-            }
-        );
+    // useEffect(() => {
+    //     gsap.fromTo(
+    //         ".form-section",
+    //         { opacity: 0, y: 50 },
+    //         {
+    //             opacity: 1,
+    //             y: 0,
+    //             duration: 1,
+    //             ease: "power3.out",
+    //             scrollTrigger: {
+    //                 trigger: ".form-section",
+    //                 start: "top 80%",
+    //                 end: "bottom 20%",
+    //                 scrub: true,
+    //                 markers: false, 
+    //             }
+    //         }
+    //     );
         
-        gsap.fromTo(
-            ".heading-section",
-            { opacity: 0, x: -100 },
-            {
-                opacity: 1,
-                x: 0,
-                duration: 1.2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: ".heading-section",
-                    start: "top 85%",
-                    end: "bottom 15%",
-                    scrub: true,
-                }
-            }
-        );
-    }, []);
+    //     gsap.fromTo(
+    //         ".heading-section",
+    //         { opacity: 0, x: -100 },
+    //         {
+    //             opacity: 1,
+    //             x: 0,
+    //             duration: 1.2,
+    //             ease: "power3.out",
+    //             scrollTrigger: {
+    //                 trigger: ".heading-section",
+    //                 start: "top 85%",
+    //                 end: "bottom 15%",
+    //                 scrub: true,
+    //             }
+    //         }
+    //     );
+    // }, []);
 
     return (
         <>
@@ -58,12 +58,12 @@ function SigninForm() {
                     quality={100}
                     className="z-0"
                 />
-                <div className="hidden sm:block absolute px-4 sm:px-10 md:px-40 mt-12">
+                <div className="hidden sm:block absolute px-4 md:px-16 xl:px-40">
                     <Image src={logo} alt="Logo" className='h-auto w-40 md:w-60' />
                 </div>
                 <div className="relative z-10 top-40 md:top-0 flex justify-center items-center h-full px-4 sm:px-8 md:px-12 xl:px-20 2xl:px-40 ">
                     <div className="grid grid-cols-1 md:grid-cols-2 w-full bg-opacity-50 p-4 sm:p-8 rounded-md">
-                        <div className="heading-section flex flex-col justify-center text-left text-gray-800">
+                        <div className="heading-section flex flex-col justify-center text-left text-gray-600">
                             <h1 className="text-xl xl:text-4xl 2xl:text-[55px] font-bold 2xl:leading-[120%] mb-8">
                                 Sign Up for Comprehensive <br />  
                                 Attack Surface Management <br />& VAPT

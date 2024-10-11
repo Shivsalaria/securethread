@@ -30,18 +30,15 @@ function Footer() {
     }, []);
 
     return (
-        <footer className="footer-section  relative bg-blueGray-200 px-6 md:px-32 pt-12 ">
+        <footer className="footer-section  relative bg-blueGray-200 px-6 md:px-32 2xl:px-44 pt-12 ">
             <div className="">
-
-
-
                 <div className="flex flex-wrap text-left lg:text-left">
                     <div className="w-full lg:w-6/12 px-4">
                         <div className=" z-10 left-4 flex items-start ">
                             <Image src={logo} alt="Logo" className='w-auto h-28' />
                         </div>
 
-                        <h4 className="text-[40px] font-semibold text-gray-600">Let’s work together</h4>
+                        <h4 className="text-3xl  xl:text-[36px] font-semibold text-gray-600">Let’s work together</h4>
                         <button
                             className="flex mt-6 select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                             type="button"
@@ -73,7 +70,7 @@ function Footer() {
                     </div>
                 </div>
                 <hr />
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between pb-12'>
                     <div className=" z-10 left-4 flex items-center ">
                         {/* <Image src={logo} alt="Logo" className='w-full h-24' /> */}
                     </div>
@@ -100,13 +97,13 @@ function Footer() {
                 </div>
              
 
-                <div className="text-gray-400 bottom-0 font-bold text-center text-4xl md:text-5xl  xl:text-6xl 2xl:text-9xl blur-[1.6px] bg-gradient-to-r from-green-800 to-white bg-clip-text text-transparent">
+                {/* <div className="text-gray-400 bottom-0 font-bold text-center text-4xl md:text-5xl  xl:text-6xl 2xl:text-8xl blur-[1px] bg-gradient-to-r from-green-800 to-white bg-clip-text text-transparent">
                     SecureThread
                 </div>
 
-                <div className="bg-[#f9fafe] blur-md absolute h-12 w-[80vw] bottom-0 text-center">
+                <div className="bg-[#f9fafe] blur-sm absolute xl:h-5 2xl:h-8 w-[80vw] bottom-0 text-center">
                 </div>
-                <div className=''></div>
+                <div className=''></div> */}
 
             </div>
         </footer>

@@ -16,8 +16,8 @@ function MainHome() {
     gsap.to(".scroll-element", {
       y: 0,
       opacity: 1,
-      duration: 1,
-      ease: "power3.out",
+      duration:1,
+      ease: "power4.out",
       scrollTrigger: {
         trigger: ".scroll-element",
         start: "top 75%",

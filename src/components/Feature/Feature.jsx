@@ -16,32 +16,12 @@ import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const DomainCard = ({ title, description, Icon }) => {
-  return (
-    <motion.div
-      whileHover={{ scale: [null, 1.1, 1.05] }} 
-      transition={{ duration: 0.3 }}
-      className={`max-w-sm bg-white cursor-pointer h-[35vh] md:h-[22vh] xl:h-[32vh] lg:mb-12 rounded-lg border border-blue-100 border-dotted shadow-sm p-6 text-center m-4 scroll-element hover:bg-green-500 group`}
-    >
-      <div className="flex justify-center mb-4 text-green-500 group-hover:text-white">
-        <Icon size={64} />
-      </div>
-      <h2 className="text-md md:text-base lg:text-sm xl:text-md 2xl:text-xl font-semibold text-gray-500 mb-2 group-hover:text-white">
-        {title}
-      </h2>
-      <p className="text-gray-500 text-sm md:text-sm lg:text-[10px] xl:text-sm 2xl:text-xl group-hover:text-white">
-        {description}
-      </p>
-    </motion.div>
-  );
-};
 
-
-const App = () => {
   useEffect(() => {
     gsap.utils.toArray(".scroll-element").forEach((element, index) => {
       gsap.fromTo(
         element,
-        { y: 100, opacity: 0 },
+        { y: 30, opacity: 0 },
         {
           y: 0,
           // opacity: 1,
@@ -59,6 +39,30 @@ const App = () => {
       );
     });
   }, []);
+
+
+  return (
+    <motion.div
+      whileHover={{ scale: [null, 1.1, 1.05] }} 
+      transition={{ duration: 0.3 }}
+      className={`max-w-sm bg-white cursor-pointer h-[35vh] md:h-[41vh] xl:h-[32vh] lg:mb-12 rounded-lg border border-blue-100 border-dotted shadow-sm p-6 text-center m-4 scroll-element hover:bg-green-500 group`}
+    >
+      <div className="flex justify-center mb-4 text-green-500 group-hover:text-white">
+        <Icon size={64} />
+      </div>
+      <h2 className="text-md md:text-base lg:text-sm xl:text-md 2xl:text-xl font-semibold text-gray-500 mb-2 group-hover:text-white">
+        {title}
+      </h2>
+      <p className="text-gray-500 text-sm md:text-sm lg:text-[10px] xl:text-sm 2xl:text-xl group-hover:text-white">
+        {description}
+      </p>
+    </motion.div>
+  );
+};
+
+
+const App = () => {
+
 
   const cardsArray = [
     {

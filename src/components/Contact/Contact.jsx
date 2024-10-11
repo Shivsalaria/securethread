@@ -11,10 +11,10 @@ const Contact = () => {
       <div id="contact-section" className="w-screen bg-[#f9fafe] mt-72 md:mt-12 py-2">
         <div className="max-w-maxContent w-[96%] lg:w-[80%] mx-auto mt-1 flex flex-col gap-3">
           <p className="text-4xl font-bold xl:text-6xl text-[#22C55E] text-center scroll-element">
-            GET IN TOUCH
+            Contact us
           </p>
 
-          <h2 className="text-2xl font-bold text-center text-gray-400 scroll-element">Contact Us To Get Better Information</h2>
+          {/* <h2 className="text-2xl font-bold text-center text-gray-400 scroll-element">Contact Us To Get Better Information</h2> */}
           <p className="text-xl text-center text-gray-400 mb-4 scroll-element">We’re here to help. Contact us with any questions, and our team will respond promptly with the information and support you need.</p>
 
           <div className="flex flex-col md:flex-row bg-[#f9fafe] p-8 rounded-lg shadow-sm gap-8">
