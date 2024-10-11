@@ -101,7 +101,7 @@ const testimonials = [
         id: 1,
         name: 'PeopleMaketh',
         image: logoImg,
-        quote: 'Connecting People',
+        quote: 'People Maketh our partner and promoter is an IT Consulting firm ',
     },
 ]
 function Component() {
