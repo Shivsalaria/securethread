@@ -126,8 +126,8 @@ function Component() {
                             <div className="mt-4 bg-green-100 rounded-lg py-2 px-4 inline-block text-green-600 text-lg font-semibold">Trusted by Industry Leaders</div>
                         </div>
                     </div>
-                    <div class="w-full md:w-4/12 lg:w-5/12 ">
-                        <div className="relative bg-white p-8 rounded-xl 2xl:ms-36 shadow-lg lg:w-[400px] lg:h-[400px] xl:w-[480px] xl:h-[430px]">
+                    <div class="w-full md:w-4/12 lg:w-5/12 px-2 sm:px-0  ">
+                        <div className="relative bg-white p-8 border border-dashed rounded-xl 2xl:ms-36 shadow-md lg:w-[400px] lg:h-[400px] xl:w-[480px] xl:h-[430px]">
                             <a href="https://www.peoplemaketh.com/" target="_blank" rel="noopener noreferrer">
                                 <Image
                                     className="w-44 h-44 rounded-sm"

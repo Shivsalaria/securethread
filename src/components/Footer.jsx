@@ -69,7 +69,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr className='border-2 border-dashed' />
                 <div className='flex items-center justify-between pb-12'>
                     <div className=" z-10 left-4 flex items-center ">
                         {/* <Image src={logo} alt="Logo" className='w-full h-24' /> */}
