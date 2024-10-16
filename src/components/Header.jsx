@@ -191,7 +191,7 @@ function Navbar() {
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:text-lg xl:text-[20px] lg:gap-x-12">
+            <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:text-lg xl:text-[19px] lg:gap-x-12">
               {navigation.map((item) => (
                 <a
                   key={item.name}
