@@ -99,9 +99,9 @@ import logoImg from '@/../public/people_maketh_logo.jpeg'
 const testimonials = [
     {
         id: 1,
-        name: 'PeopleMaketh',
+        name: 'hii',
         image: logoImg,
-        quote: 'People Maketh our partner and promoter is an IT Consulting firm ',
+        quote: 'People Maketh is our partner that promotes Securethread.io in its pursuit of developing innovative security testing products and services',
     },
 ]
 function Component() {
@@ -137,7 +137,7 @@ function Component() {
                                     height={128}
                                 />
                             </a>
-                            <h3 className="mt-4 text-2xl  text-green-600">{testimonials[currentTestimonial].name}</h3>
+                            {/* <h3 className="mt-4 text-2xl  text-green-600">{testimonials[currentTestimonial].name}</h3> */}
                             <p className="mt-4 text-gray-600">{testimonials[currentTestimonial].quote}</p>
 
                             <div className="flex space-x-4 mt-4 text-gray-500">

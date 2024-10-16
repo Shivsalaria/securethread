@@ -43,7 +43,7 @@ const DomainCard = ({ title, description, Icon }) => {
 
   return (
     <motion.div
-      whileHover={{ scale: [null, 1.1, 1.05] }} 
+      whileHover={{ scale: [null, 1.1, 1.05] }}
       transition={{ duration: 0.3 }}
       className={`max-w-sm bg-white cursor-pointer h-[35vh] md:h-[41vh] xl:h-[32vh] lg:mb-12 rounded-lg border border-blue-100 border-dotted shadow-sm p-6 text-center m-4 scroll-element hover:bg-green-500 group`}
     >
@@ -118,8 +118,7 @@ const App = () => {
       </div>
       <div className="mt-6">
         <p className="text-gray-700 text-center text-sm lg:text-base px-4">
-          Venus main features. Most important and useful features of Template in a single design system tool.
-        </p>
+          Secure Thread simplifies and accelerates security testing with essential features in one unified tool.</p>
       </div>
       <div className="flex flex-wrap justify-center mt-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-40">
         {cardsArray.map((card, index) => (

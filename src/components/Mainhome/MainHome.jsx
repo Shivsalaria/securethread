@@ -8,7 +8,6 @@ import pic from '@/../public/dash.png'
 // import ReactPlayer from 'react-player';
 
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function MainHome() {
@@ -16,7 +15,7 @@ function MainHome() {
     gsap.to(".scroll-element", {
       y: 0,
       opacity: 1,
-      duration:1,
+      duration: 1,
       ease: "power4.out",
       scrollTrigger: {
         trigger: ".scroll-element",
@@ -31,7 +30,7 @@ function MainHome() {
   return (
     <>
 
-      <div className='top-8 h-[70vh] sm:h-[80vh] md:h-[30vh] lg:h-[80vh] xl:h-[80vh] 2xl:h-[90vh] 3xl:h-[90vh] relative w-full'>
+      <div className='h-[70vh] sm:h-[80vh] md:h-[30vh] lg:h-[80vh] xl:h-[80vh] 2xl:h-[90vh] 3xl:h-[90vh] relative w-full'>
         <Image
           src={homeBanner}
           alt="Background"

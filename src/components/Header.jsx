@@ -169,7 +169,8 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="isolate mt-2 rounded-lg top-0 mx-auto grid font-semibold z-50">
+    <div className="isolate mt-2 rounded-lg top-0 mx-auto grid font-semibold z-50 p-4">
+    {/* // <div className="isolate mt-2 rounded-lg top-0 mx-auto grid font-semibold z-50 p- bg-gradient-to-r from-green-500 to-black"> */}
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"></div>
 
       <div className="px-6 p-4 lg:px-8">
@@ -190,7 +191,7 @@ function Navbar() {
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:text-lg lg:gap-x-12">
+            <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:text-lg xl:text-[20px] lg:gap-x-12">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -204,7 +205,7 @@ function Navbar() {
             <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:text-lg lg:justify-end">
               <a href="https://asmuser.securethread.io/" target="_blank" rel="noopener noreferrer">
                 <button className="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded-md w-40 h-12">
-                  Login
+                 Try
                 </button>
               </a>
             </div>
@@ -245,7 +246,7 @@ function Navbar() {
                   <div className="py-6">
                     <a href="https://asmuser.securethread.io/" target="_blank" rel="noopener noreferrer">
                       <button className="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded-md w-40 h-12">
-                        Login
+                        Try
                       </button>
                     </a>
                   </div>
